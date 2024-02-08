@@ -12,7 +12,7 @@ username=$(id -u -n 1000)
 apt update && apt upgrade -y
 
 # Install Core and Quality of Life Programs
-apt install kitty build-essential apt-transport-https flameshot zsh-syntax-highlighting ripgrep bat tldr htop ranger fzf fd-find tmux docker.io docker-compose gpg -y
+apt install kitty build-essential apt-transport-https flameshot zsh-syntax-highlighting ripgrep bat tldr htop ranger fzf fd-find tmux docker.io docker-compose gpg ninja-build gettext cmake unzip curl -y
 
 # Install eza
 
@@ -32,7 +32,7 @@ apt update && apt install eza brave-browser -y
 usermod -aG docker $username 
 
 # Dotfile configuration
-git clone https://github.com/n3ph0s/dotfiles.git /home/$username/dotfiles
+cp -R dotfiles /home/$username/dotfiles
 cd /home/$username
 chown -R $username:$username dotfiles/
 

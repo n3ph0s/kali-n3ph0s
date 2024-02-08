@@ -1,0 +1,16 @@
+# File Management 
+
+alias ls='eza --all --group-directories-first --long --colour=always'
+alias ld='eza --colour=always --long --only-dirs'
+
+alias d='dirs -v'
+for index ({1..9}) alias "$index"="cd +${index}"; unset index
+
+alias cat='batcat --theme Catppuccin-mocha'
+alias vim='nvim'
+
+# Git
+alias ga='git add'
+alias gcm='git commit'
+alias gp='git push'
+alias gc='git clone'

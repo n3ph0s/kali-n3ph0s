@@ -17,9 +17,15 @@ code --install-extension ms-python.python
 code --install-extension snyk-security.snyk-vulnerability-scanner 
 code --install-extension Catppuccin.catppuccin-vsc 
 
+# Build Neovim
+cd /home/$username/installs
+git clone https://github.com/neovim/neovim
+cd neovim && git checkout stable && CMAKE_BUILD_TYPE=RelWithDebInfo
+sudo make && cd build && sudo cpack -G DEB && sudo dpkg -i nvim-linux64.deb
+
 # Load the dotfiles
-# cd /home/$username/dotfiles
-# ./install.sh
+cd /home/$username/dotfiles
+./install.sh
 
 # Cleanup
 cd /home/$username
