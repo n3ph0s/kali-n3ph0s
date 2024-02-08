@@ -9,8 +9,8 @@ curl -sS https://starship.rs/install.sh | sh
 mkdir /home/$username/installs
 wget https://github.com/obsidianmd/obsidian-releases/releases/download/v1.5.3/obsidian_1.5.3_amd64.deb -O /home/$username/installs/obsidian.deb
 wget https://update.code.visualstudio.com/latest/linux-deb-x64/stable -O /home/$username/installs/vscode.deb
-apt install /home/$username/installs/obsidian.deb -y
-apt install /home/$username/installs/vscode.deb -y
+sudo apt install /home/$username/installs/obsidian.deb -y
+sudo apt install /home/$username/installs/vscode.deb -y
 
 # Install VS Code Extensions
 code --install-extension ms-python.python 
