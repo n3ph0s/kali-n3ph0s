@@ -11,7 +11,8 @@ wget https://github.com/obsidianmd/obsidian-releases/releases/download/v1.5.3/ob
 wget https://update.code.visualstudio.com/latest/linux-deb-x64/stable -O /home/$username/installs/vscode.deb
 sudo apt install /home/$username/installs/obsidian.deb -y
 sudo apt install /home/$username/installs/vscode.deb -y
-
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+#
 # Install VS Code Extensions
 code --install-extension ms-python.python 
 code --install-extension snyk-security.snyk-vulnerability-scanner 
