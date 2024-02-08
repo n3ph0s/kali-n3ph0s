@@ -31,6 +31,6 @@ cd /home/$username/dotfiles
 # Cleanup
 cd /home/$username
 rm -rf kali-n3ph0s
-rm -rf installs 
+sudo rm -rf installs 
 sudo reboot
 
