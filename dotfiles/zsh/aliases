@@ -14,3 +14,7 @@ alias ga='git add'
 alias gcm='git commit'
 alias gp='git push'
 alias gc='git clone'
+
+# TLDR
+alias tldr='tldr --list | fzf --preview "tldr {1} --color=always" --preview-window=right,70% | xargs tldr'
+
