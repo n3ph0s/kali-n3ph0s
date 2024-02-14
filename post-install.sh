@@ -24,6 +24,9 @@ git clone https://github.com/neovim/neovim
 cd neovim && git checkout stable && CMAKE_BUILD_TYPE=RelWithDebInfo
 sudo make && cd build && sudo cpack -G DEB && sudo dpkg -i nvim-linux64.deb
 
+# Update TLDR cache
+tldr --update
+
 # Load the dotfiles
 cd /home/$username/dotfiles
 ./install.sh

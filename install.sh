@@ -12,7 +12,7 @@ username=$(id -u -n 1000)
 apt update && apt upgrade -y
 
 # Install Core and Quality of Life Programs
-apt install kitty build-essential apt-transport-https flameshot zsh-syntax-highlighting ripgrep bat tldr htop ranger fzf fd-find tmux docker.io docker-compose gpg ninja-build gettext cmake unzip curl -y
+apt install kitty build-essential apt-transport-https flameshot zsh-syntax-highlighting ripgrep bat tealdeer htop ranger fzf fd-find tmux docker.io docker-compose gpg ninja-build gettext cmake unzip curl -y
 
 # Install eza
 
